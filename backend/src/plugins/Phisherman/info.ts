@@ -18,7 +18,7 @@ export const pluginInfo: ZeppelinGuildPluginBlueprint["info"] = {
     ~~~
     
     ### Note
-    When using Phisherman features in Zeppelin, Zeppelin reports statistics about checked links back to Phisherman. This only includes the domain (e.g. zeppelin.gg), not the full link.
+    When using Phisherman features in Otter, Otter reports statistics about checked links back to Phisherman. This only includes the domain (e.g. otter.polars.cloud), not the full link.
     
     ### Usage with Automod
     Once you have configured the Phisherman plugin, you are ready to use it with automod. Currently, Phisherman is available as an option in the \`match_links\` plugin:
