@@ -43,10 +43,6 @@ export async function getCaseEmbed(
   const config = pluginData.config.get();
   const icon = getCaseIcon(pluginData, theCase.type);
   const embedColour = config.embed_colour ?? config.embed_color ?? 0x2b2d31;
-  const guildName =
-    config.guild_aliases && theCase.guild_id in config.guild_aliases
-      ? config.guild_aliases[theCase.guild_id]
-      : pluginData.client.guilds.cache.get(theCase.guild_id)?.name ?? theCase.guild_id;
 
   const embed: any = {
     title: `${icon} ${actionTypeStr} - Case #${theCase.case_number}`.trim(),
@@ -63,11 +59,6 @@ export async function getCaseEmbed(
       {
         name: "Moderator",
         value: modName,
-        inline: true,
-      },
-      {
-        name: "Server",
-        value: `**${guildName}**`,
         inline: true,
       },
     ],

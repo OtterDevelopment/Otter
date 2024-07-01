@@ -9,7 +9,7 @@ export const roleButtonsPluginInfo: ZeppelinPluginInfo = {
     Allow users to pick roles by clicking on buttons
   `),
   configurationGuide: trimPluginDescription(`
-    Button roles are entirely config-based; this is in contrast to the old reaction roles. They can either be added to an existing message posted by Zeppelin or posted as a new message.
+    Button roles are entirely config-based; this is in contrast to the old reaction roles. They can either be added to an existing message posted by Otter or posted as a new message.
     
     ## Basic role buttons
     ~~~yml
@@ -51,7 +51,7 @@ export const roleButtonsPluginInfo: ZeppelinPluginInfo = {
     ~~~
     
     ## Role buttons for an existing message
-    This message must be posted by Zeppelin.
+    This message must be posted by Otter.
     ~~~yml
     role_buttons:
       config:

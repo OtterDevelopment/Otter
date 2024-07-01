@@ -62,7 +62,7 @@ export const HelpCmd = utilityCmd({
       let snippet = `**${prefix}${trigger}**`;
       if (description) snippet += `\n${description}`;
       if (usage) snippet += `\nBasic usage: \`${usage}\``;
-      snippet += `\n<https://zeppelin.gg/docs/plugins/${plugin.blueprint.name}/usage#command-${commandSlug}>`;
+      snippet += `\n<https://otter.polars.cloud/docs/plugins/${plugin.blueprint.name}/usage#command-${commandSlug}>`;
 
       return snippet;
     });

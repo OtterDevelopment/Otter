@@ -19,7 +19,7 @@ export const SetTimezoneCmd = timeAndDateCmd({
         message,
         trimLines(`
         Invalid timezone: \`${escapeInlineCode(args.timezone)}\`
-        Zeppelin uses timezone locations rather than specific timezone names.
+        Otter uses timezone locations rather than specific timezone names.
         See the **TZ database name** column at <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones> for a list of valid options.
       `),
       );

@@ -112,7 +112,7 @@ export async function muteUser(
       if (zepRoles.size === 0 || !zepRoles.some((zepRole) => zepRole.position > actualMuteRole.position)) {
         lock.unlock();
         logs.logBotAlert({
-          body: `Cannot mute user, specified mute role is above Zeppelin in the role hierarchy`,
+          body: `Cannot mute user, specified mute role is above Otter in the role hierarchy`,
         });
         throw new RecoverablePluginError(ERRORS.MUTE_ROLE_ABOVE_ZEP, pluginData.guild);
       }
@@ -124,7 +124,7 @@ export async function muteUser(
       if (!member.manageable) {
         lock.unlock();
         logs.logBotAlert({
-          body: `Cannot mute user, specified user is above Zeppelin in the role hierarchy`,
+          body: `Cannot mute user, specified user is above Otter in the role hierarchy`,
         });
         throw new RecoverablePluginError(ERRORS.USER_ABOVE_ZEP, pluginData.guild);
       }

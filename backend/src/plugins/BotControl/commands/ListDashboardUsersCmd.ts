@@ -13,7 +13,7 @@ export const ListDashboardUsersCmd = botControlCmd({
   async run({ pluginData, message: msg, args }) {
     const guild = await pluginData.state.allowedGuilds.find(args.guildId);
     if (!guild) {
-      void msg.channel.send("Server is not using Zeppelin");
+      void msg.channel.send("Server is not using Otter");
       return;
     }
 

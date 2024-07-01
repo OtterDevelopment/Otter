@@ -6,7 +6,7 @@ import { RoleButtonsPluginType } from "../types";
 export const resetButtonsCmd = guildPluginMessageCommand<RoleButtonsPluginType>()({
   trigger: "role_buttons reset",
   description:
-    "In case of issues, you can run this command to have Zeppelin 'forget' about specific role buttons and re-apply them. This will also repost the message, if not targeting an existing message.",
+    "In case of issues, you can run this command to have Otter 'forget' about specific role buttons and re-apply them. This will also repost the message, if not targeting an existing message.",
   usage: "!role_buttons reset my_roles",
   permission: "can_reset",
   signature: {

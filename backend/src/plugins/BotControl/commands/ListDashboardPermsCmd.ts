@@ -23,7 +23,7 @@ export const ListDashboardPermsCmd = botControlCmd({
     if (args.guildId) {
       guild = await pluginData.state.allowedGuilds.find(args.guildId);
       if (!guild) {
-        void msg.channel.send("Server is not using Zeppelin");
+        void msg.channel.send("Server is not using Otter");
         return;
       }
     }

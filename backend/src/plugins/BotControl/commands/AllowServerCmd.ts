@@ -51,6 +51,6 @@ export const AllowServerCmd = botControlCmd({
       );
     }
 
-    void msg.channel.send("Server is now allowed to use Zeppelin!");
+    void msg.channel.send("Server is now allowed to use Otter!");
   },
 });

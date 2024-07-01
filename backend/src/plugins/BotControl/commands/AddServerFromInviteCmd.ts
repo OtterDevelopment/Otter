@@ -50,6 +50,6 @@ export const AddServerFromInviteCmd = botControlCmd({
       );
     }
 
-    msg.channel.send("Server was eligible and is now allowed to use Zeppelin!");
+    msg.channel.send("Server was eligible and is now allowed to use Otter!");
   },
 });
